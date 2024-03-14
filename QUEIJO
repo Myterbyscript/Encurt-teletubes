@@ -1,0 +1,71 @@
+local LSU = loadstring(game:HttpGet("https://raw.githubusercontent.com/KrypDeveloper/MAXIMUS-LIBRARY/main/Maximus.lua"))()
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "FROST x OGEID TEST", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+local Tab = Window:MakeTab({
+    Name = "TELEPORTES",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+    Name = "TELEPORTES BOSS"
+})
+
+Tab:AddButton({
+    Name = "ULTRA EGO",
+    Callback = function()
+              print("button pressed")
+
+LSU.TeleportPlayer(1892,301,399)
+
+      end    
+})
+
+Tab:AddButton({
+    Name = "ultra instinto",
+    Callback = function()
+              print("button pressed")
+
+LSU.TeleportPlayer(-493,482,-3179)
+
+      end    
+})
+
+Tab:AddButton({
+    Name = "brolly",
+    Callback = function()
+              print("button pressed")
+
+LSU.TeleportPlayer(-887,5,-888)
+
+      end    
+})
+
+Tab:AddButton({
+    Name = "jiren",
+    Callback = function()
+              print("button pressed")
+
+LSU.TeleportPlayer(5468,784,-6991)
+
+      end    
+})
+
+Tab:AddButton({
+    Name = "SEJA OQ DEUS QUISER FUNCIONE",
+    Callback = function()
+              print("button pressed")
+
+LSU.TeleportPlayer(10,20,30)
+
+      end    
+})
+
+OrionLib.Init()
